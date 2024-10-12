@@ -18,12 +18,15 @@ body {
 h1 {
     text-align: center;
     font-style: italic;
+    font-size: 60px;
     margin-bottom: 50px;
+    padding-top: 40px;
 }
 
 .pricing-table {
     display: flex;
     justify-content: center;
+    padding-top: 200px;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -76,4 +79,24 @@ h1 {
 
 .btn:hover {
     background-color: #0056b3;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+    .pricing-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
